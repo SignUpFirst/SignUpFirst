@@ -49,12 +49,11 @@ test:
   password: password
 
 staging:
-  adapter: postgresql
-  encoding: unicode
-  database: catarse_staging
-  pool: 5
-  username: postgres
-  password: password 
-  host: 127.0.0.1  
+    adapter: postgresql
+    username: <%= ENV['POSTGRESQL_USERNAME'] %>
+    password: <%= ENV['POSTGRESQL_PASSWORD'] %>
+    database: <%= ENV['POSTGRESQL_DATABASE'] %>
+    host: <%= ENV['POSTGRESQL_ADDRESS'] %>
+
 
 
