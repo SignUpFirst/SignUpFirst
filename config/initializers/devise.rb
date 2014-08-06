@@ -214,7 +214,7 @@ Devise.setup do |config|
   if Rails.env.test?
     # We depend on facebook provider for the test env
     # As the test database is always empty in this stage we just create this fake provider
-    config.omniauth 'facebook', 'dummy_key', 'dummy_secret', scope: ''
+    config.omniauth 'facebook', '738673749530255', 'dd4a28f43b1ed3aa36c5aeda450805ae', scope: ''
   else
     begin
       if ActiveRecord::Base.connection.table_exists? 'oauth_providers'

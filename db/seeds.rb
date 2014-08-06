@@ -85,8 +85,8 @@ end
 
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = 'your_facebook_app_key'
-  o.secret = 'your_facebook_app_secret'
+  o.key = '738673749530255'
+  o.secret = 'dd4a28f43b1ed3aa36c5aeda450805ae'
   o.path = 'facebook'
 end
 
