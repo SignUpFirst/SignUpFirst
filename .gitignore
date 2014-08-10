@@ -1,6 +1,5 @@
 .bundle
 db/*.sqlite3
-log/*.log
 tmp/**/*
 db/seeds/my-seeds-local.rb
 db/seeds/my-seeds-heroku.rb
