@@ -50,10 +50,9 @@ test:
 
 staging:
     adapter: postgresql
-    username: <%= ENV['POSTGRESQL_USERNAME'] %>
-    password: <%= ENV['POSTGRESQL_PASSWORD'] %>
-    database: <%= ENV['POSTGRESQL_DATABASE'] %>
-    host: <%= ENV['POSTGRESQL_ADDRESS'] %>
-
+    username: u36t39
+    password: x0OKxABrzzuvvhb
+    database: signupfirst_staging
+    host: 127.0.0.1
 
 
