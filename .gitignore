@@ -2,6 +2,7 @@
 db/*.sqlite3
 tmp/**/*
 db/seeds/my-seeds-local.rb
+/log/*.log
 db/seeds/my-seeds-heroku.rb
 db/development_structure.sql
 # Vim

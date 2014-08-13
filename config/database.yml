@@ -48,8 +48,18 @@ test:
   username: postgres
   password: password
 
+# staging:
+#   adapter: postgresql
+#   encoding: unicode
+#   host: localhost
+#   database: catarse_staging
+#   pool: 5
+#   username: postgres
+#   password: password
+
 staging:
     adapter: postgresql
+    encoding: unicode
     username: u36t39
     password: x0OKxABrzzuvvhb
     database: signupfirst_staging
