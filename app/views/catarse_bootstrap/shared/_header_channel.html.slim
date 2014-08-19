@@ -9,7 +9,7 @@ header
             = link_to t('.how_work'), channels_about_path, id: 'guidelines_header_modal', class: 'standard-link-green'
           li.nav-item
             = link_to t('.posts'), channels_posts_path, class: 'standard-link'
-          - if channel.partners.present?
+          - if !channel.blank? && channel.partners.present?
             li.nav-item
               = link_to t('.partners'), root_url(anchor: 'partners'), class: 'standard-link'
           li.nav-item
