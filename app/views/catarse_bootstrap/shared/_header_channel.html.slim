@@ -12,8 +12,9 @@ header
           - if !channel.blank? && channel.partners.present?
             li.nav-item
               = link_to t('.partners'), root_url(anchor: 'partners'), class: 'standard-link'
-          li.nav-item
-            = mail_to channel.email, t('.contact'), title: t('.contact'), class: 'standard-link', target: '_blank'
+          - if !channel.blank?
+            li.nav-item
+              = mail_to channel.email, t('.contact'), title: t('.contact'), class: 'standard-link', target: '_blank'
           - if current_user
             li.nav-item
               = link_to '#', class: 'user-menu' do
