@@ -63,6 +63,6 @@ staging:
     username: u36t39
     password: x0OKxABrzzuvvhb
     database: signupfirst_staging
-    host: 127.0.0.1
+    host: 178.62.26.160
 
 
