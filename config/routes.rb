@@ -161,6 +161,8 @@ Catarse::Application.routes.draw do
 
   get "/:permalink" => "projects#show", as: :project_by_slug
 
+  get "/profile/edit" => 'channels/profiles#edit'
+
 
 end
 

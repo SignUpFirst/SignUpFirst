@@ -38899,3 +38899,2965 @@ Processing by RewardsController#index as */*
   [1m[35mReward Load (9.1ms)[0m  SELECT "rewards".* FROM "rewards"  WHERE "rewards"."project_id" = $1  ORDER BY "rewards"."row_order" ASC  [["project_id", 7]]
   Rendered rewards/index.html.slim (20.1ms)
 Completed 200 OK in 27ms (Views: 15.9ms | ActiveRecord: 9.9ms)
+  [1m[36mOauthProvider Load (204.1ms)[0m  [1mSELECT "oauth_providers".* FROM "oauth_providers"[0m
+  [1m[35mOauthProvider Load (0.4ms)[0m  SELECT "oauth_providers".* FROM "oauth_providers"
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-05 16:20:57 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (150.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+Redirected to /en
+Filter chain halted as :set_locale rendered or redirected
+Completed 302 Found in 31ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-09-05 16:20:57 +0530
+Processing by ProjectsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mProjectsForHome Load (314.8ms)[0m  SELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recommended'
+  Rendered collection (0.0ms)
+  [1m[36mProjectsForHome Load (1.5ms)[0m  [1mSELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'expiring'[0m
+  Rendered collection (0.0ms)
+  [1m[35mProjectsForHome Load (1.3ms)[0m  SELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recents'
+  Rendered collection (0.0ms)
+  Rendered layouts/_newsletter.html.slim (33.4ms)
+  Rendered projects/index.html.slim within layouts/application (539.0ms)
+  [1m[36mChannel Load (28.1ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  Rendered layouts/_analytics.html.slim (3.2ms)
+  Rendered layouts/_mixpanel.html.slim (2.3ms)
+  Rendered layouts/_facebook_sdk.html.slim (3.2ms)
+  Rendered layouts/_header.html.slim (106.4ms)
+  Rendered layouts/_newsletter.html.slim (1.9ms)
+  Rendered layouts/_facebook_like.html.slim (2.6ms)
+  Rendered layouts/_footer.html.slim (34.7ms)
+  Rendered layouts/_crazzy_egg.html.slim (1.6ms)
+  Rendered layouts/_new_zendesk.html.slim (3.7ms)
+Completed 200 OK in 1403ms (Views: 932.9ms | ActiveRecord: 405.0ms)
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-05 16:20:59 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/catarse_bootstrap/catarse-assets.png" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/catarse_bootstrap/banner-content.png" for 127.0.0.1 at 2014-09-05 16:21:02 +0530
+
+
+Started GET "/assets/catarse_bootstrap/banner-3years.png" for 127.0.0.1 at 2014-09-05 16:21:03 +0530
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-05 16:21:07 +0530
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-05 16:21:07 +0530
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-05 16:21:07 +0530
+
+
+Started GET "/en/login" for 127.0.0.1 at 2014-09-05 16:21:07 +0530
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"locale"=>"en"}
+  Rendered catarse_bootstrap/devise/shared/_header.html.slim (21.2ms)
+  Rendered catarse_bootstrap/devise/shared/_alert.html.slim (53.1ms)
+  Rendered catarse_bootstrap/devise/sessions/new.html.slim within layouts/catarse_bootstrap (192.9ms)
+  [1m[35mChannel Load (0.6ms)[0m  SELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  Rendered layouts/_facebook_sdk.html.slim (0.2ms)
+  Rendered catarse_bootstrap/layouts/_uservoice.html.slim (2.9ms)
+  Rendered catarse_bootstrap/layouts/_webfont.html.slim (2.1ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1
+  Rendered layouts/_analytics.html.slim (0.0ms)
+  Rendered layouts/_mixpanel.html.slim (0.0ms)
+Completed 200 OK in 339ms (Views: 269.9ms | ActiveRecord: 31.5ms)
+
+
+Started GET "/assets/webflow.css?body=1" for 127.0.0.1 at 2014-09-05 16:21:08 +0530
+
+
+Started GET "/assets/catarse_bootstrap/logo_icon_catarse.png" for 127.0.0.1 at 2014-09-05 16:21:08 +0530
+
+
+Started POST "/en/login" for 127.0.0.1 at 2014-09-05 16:21:19 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eM1UKJtCkK/BhdO1ekr8Yj0QpLmggb3Mup3L/0GXR1U=", "user"=>{"email"=>"test@me.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log me in", "locale"=>"en"}
+  [1m[36mUser Load (209.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'test@me.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (24.3ms)[0m  BEGIN
+  [1m[36mSQL (107.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 9[0m  [["current_sign_in_at", "2014-09-05 16:21:19.783343"], ["last_sign_in_at", "2014-09-03 19:29:14.704942"], ["sign_in_count", 4], ["updated_at", "2014-09-05 16:21:19.809337"]]
+  [1m[35m (201.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/en
+Completed 302 Found in 1031ms (ActiveRecord: 542.6ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-09-05 16:21:20 +0530
+Processing by ProjectsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProject Load (46.4ms)[0m  SELECT  "projects".* FROM "projects"  WHERE ("projects"."state" IN ('online')) AND (EXISTS(SELECT true FROM users u WHERE u.id = projects.user_id AND lower(u.address_state) = lower('')))  ORDER BY random() LIMIT 3
+  [1m[36mProjectsForHome Load (1.3ms)[0m  [1mSELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recommended'[0m
+  Rendered collection (0.0ms)
+  [1m[35mProjectsForHome Load (1.5ms)[0m  SELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'expiring'
+  Rendered collection (0.0ms)
+  [1m[36mProjectsForHome Load (1.5ms)[0m  [1mSELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recents'[0m
+  Rendered collection (0.0ms)
+  Rendered layouts/_newsletter.html.slim (4.2ms)
+  Rendered projects/index.html.slim within layouts/application (74.6ms)
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1
+  Rendered layouts/_analytics.html.slim (0.0ms)
+  Rendered layouts/_mixpanel.html.slim (0.0ms)
+  [1m[36mUserTotal Load (26.4ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (0.2ms)
+  [1m[35mProject Load (0.2ms)[0m  SELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (291.2ms)
+  Rendered layouts/_newsletter.html.slim (2.1ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (23.4ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.1ms)
+  Rendered layouts/_new_zendesk.html.slim (0.2ms)
+Completed 200 OK in 593ms (Views: 510.4ms | ActiveRecord: 80.1ms)
+
+
+Started GET "/en/users/9-test" for 127.0.0.1 at 2014-09-05 16:21:27 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9-test", "locale"=>"en"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (15.1ms)[0m  SELECT  "users".* FROM "users"  WHERE (deactivated_at IS NULL) AND "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAuthorization Load (25.5ms)[0m  [1mSELECT  "authorizations".* FROM "authorizations" INNER JOIN "oauth_providers" ON "oauth_providers"."id" = "authorizations"."oauth_provider_id" WHERE "authorizations"."user_id" = $1 AND (oauth_providers.name = 'facebook')  ORDER BY "authorizations"."id" ASC LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mUnsubscribe Load (0.7ms)[0m  SELECT  "unsubscribes".* FROM "unsubscribes"  WHERE "unsubscribes"."user_id" = $1 AND "unsubscribes"."project_id" IS NULL LIMIT 1  [["user_id", 9]]
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT DISTINCT "projects".* FROM "projects" INNER JOIN "contributions" ON "projects"."id" = "contributions"."project_id" WHERE "contributions"."state" = 'confirmed' AND "contributions"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered users/_unsubscribes.html.slim (59.8ms)
+  [1m[35mOauthProvider Load (0.3ms)[0m  SELECT  "oauth_providers".* FROM "oauth_providers"  WHERE "oauth_providers"."name" = 'facebook' LIMIT 1
+  [1m[36mAuthorization Load (0.2ms)[0m  [1mSELECT "authorizations".* FROM "authorizations"  WHERE "authorizations"."user_id" = $1 AND "authorizations"."oauth_provider_id" = 1[0m  [["user_id", 9]]
+  [1m[35mState Load (1.2ms)[0m  SELECT "states".* FROM "states"   ORDER BY "states"."name" ASC
+  Rendered users/_current_user_fields.html.slim (105.8ms)
+  [1m[36mUserTotal Load (0.5ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mContribution Load (0.3ms)[0m  SELECT "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND (contributions.can_refund)  [["user_id", 9]]
+  Rendered users/_credits.html.slim (50.1ms)
+  Rendered users/show.html.slim within layouts/application (251.7ms)
+  [1m[36mChannel Load (0.7ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  Rendered layouts/_analytics.html.slim (0.1ms)
+  Rendered layouts/_mixpanel.html.slim (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (0.3ms)
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (10.7ms)
+  Rendered layouts/_newsletter.html.slim (3.1ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (33.8ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.0ms)
+  Rendered layouts/_new_zendesk.html.slim (0.1ms)
+Completed 200 OK in 547ms (Views: 358.5ms | ActiveRecord: 53.8ms)
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-05 16:21:28 +0530
+
+
+Started GET "/assets/gravatar.png" for 127.0.0.1 at 2014-09-05 16:21:28 +0530
+
+
+Started GET "/assets/catarse/social_icons.png" for 127.0.0.1 at 2014-09-05 16:21:28 +0530
+
+
+Started GET "/en/users/9-test/contributions?page=1" for 127.0.0.1 at 2014-09-05 16:21:28 +0530
+Processing by Users::ContributionsController#index as */*
+  Parameters: {"page"=>"1", "user_id"=>"9-test", "locale"=>"en"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mContribution Load (0.3ms)[0m  SELECT  "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND ("contributions"."state" IN ('confirmed','requested_refund','refunded','waiting_confirmation'))  ORDER BY created_at DESC, confirmed_at DESC LIMIT 10 OFFSET 0  [["user_id", 9]]
+  Rendered users/contributions/index.html.slim (4.0ms)
+Completed 200 OK in 71ms (Views: 39.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/login_with_facebook_button310x60.png" for 127.0.0.1 at 2014-09-05 16:21:28 +0530
+
+
+Started GET "/assets/catarse/bot_profileUser.png" for 127.0.0.1 at 2014-09-05 16:21:28 +0530
+
+
+Started GET "/en/users/9-test/projects?page=1" for 127.0.0.1 at 2014-09-05 16:21:34 +0530
+Processing by Users::ProjectsController#index as */*
+  Parameters: {"page"=>"1", "user_id"=>"9-test", "locale"=>"en"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."user_id" = $1 AND ("projects"."state" NOT IN ('deleted')) LIMIT 10 OFFSET 0[0m  [["user_id", 9]]
+  [1m[35m (76.8ms)[0m  SELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7
+  [1m[36mCategory Load (23.0ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mProjectTotal Load (9.6ms)[0m  SELECT  "project_totals".* FROM "project_totals"  WHERE "project_totals"."project_id" = $1 LIMIT 1  [["project_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7[0m
+  Rendered users/_project.html.slim (214.4ms)
+  Rendered users/projects/index.html.slim (230.3ms)
+Completed 200 OK in 271ms (Views: 123.9ms | ActiveRecord: 127.3ms)
+
+
+Started PATCH "/en/users/9-test" for 127.0.0.1 at 2014-09-05 16:25:33 +0530
+Processing by UsersController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sm07wXlWi3SNlIYTl0c6sOisLFv6jnQD/g1MQ5ysj8I=", "user"=>{"uploaded_image"=>#<ActionDispatch::Http::UploadedFile:0x0000000b5e50a0 @tempfile=#<Tempfile:/tmp/RackMultipart20140905-5907-1cpn7a2>, @original_filename="sample_photo_00.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"user[uploaded_image]\"; filename=\"sample_photo_00.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Submit", "id"=>"9-test", "locale"=>"en"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE (deactivated_at IS NULL) AND "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mSQL (20.4ms)[0m  UPDATE "users" SET "updated_at" = $1, "uploaded_image" = $2 WHERE "users"."id" = 9  [["updated_at", "2014-09-05 16:25:34.523810"], ["uploaded_image", "sample_photo_00.jpg"]]
+  [1m[36m (32.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/en/users/9-test#settings
+Completed 302 Found in 834ms (ActiveRecord: 54.7ms)
+
+
+Started GET "/en/users/9-test" for 127.0.0.1 at 2014-09-05 16:25:34 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9-test", "locale"=>"en"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE (deactivated_at IS NULL) AND "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAuthorization Load (0.4ms)[0m  SELECT  "authorizations".* FROM "authorizations" INNER JOIN "oauth_providers" ON "oauth_providers"."id" = "authorizations"."oauth_provider_id" WHERE "authorizations"."user_id" = $1 AND (oauth_providers.name = 'facebook')  ORDER BY "authorizations"."id" ASC LIMIT 1  [["user_id", 9]]
+  [1m[36mUnsubscribe Load (0.4ms)[0m  [1mSELECT  "unsubscribes".* FROM "unsubscribes"  WHERE "unsubscribes"."user_id" = $1 AND "unsubscribes"."project_id" IS NULL LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mProject Load (0.7ms)[0m  SELECT DISTINCT "projects".* FROM "projects" INNER JOIN "contributions" ON "projects"."id" = "contributions"."project_id" WHERE "contributions"."state" = 'confirmed' AND "contributions"."user_id" = $1  [["user_id", 9]]
+  Rendered users/_unsubscribes.html.slim (5.5ms)
+  [1m[36mOauthProvider Load (0.7ms)[0m  [1mSELECT  "oauth_providers".* FROM "oauth_providers"  WHERE "oauth_providers"."name" = 'facebook' LIMIT 1[0m
+  [1m[35mAuthorization Load (0.6ms)[0m  SELECT "authorizations".* FROM "authorizations"  WHERE "authorizations"."user_id" = $1 AND "authorizations"."oauth_provider_id" = 1  [["user_id", 9]]
+  Rendered users/_current_user_fields.html.slim (49.8ms)
+  [1m[36mUserTotal Load (0.3ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mContribution Load (0.4ms)[0m  SELECT "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND (contributions.can_refund)  [["user_id", 9]]
+  Rendered users/_credits.html.slim (9.2ms)
+  Rendered users/show.html.slim within layouts/application (80.4ms)
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  Rendered layouts/_analytics.html.slim (0.0ms)
+  Rendered layouts/_mixpanel.html.slim (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (0.3ms)
+  Rendered layouts/_flash.html.slim (2.9ms)
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (22.1ms)
+  Rendered layouts/_newsletter.html.slim (2.5ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (28.6ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.1ms)
+  Rendered layouts/_new_zendesk.html.slim (0.2ms)
+Completed 200 OK in 224ms (Views: 209.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/en/users/9-test/contributions?page=1" for 127.0.0.1 at 2014-09-05 16:25:35 +0530
+Processing by Users::ContributionsController#index as */*
+  Parameters: {"page"=>"1", "user_id"=>"9-test", "locale"=>"en"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mContribution Load (0.4ms)[0m  SELECT  "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND ("contributions"."state" IN ('confirmed','requested_refund','refunded','waiting_confirmation'))  ORDER BY created_at DESC, confirmed_at DESC LIMIT 10 OFFSET 0  [["user_id", 9]]
+  Rendered users/contributions/index.html.slim (1.1ms)
+Completed 200 OK in 10ms (Views: 6.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/en/users/9-test/projects?page=1" for 127.0.0.1 at 2014-09-05 16:25:49 +0530
+Processing by Users::ProjectsController#index as */*
+  Parameters: {"page"=>"1", "user_id"=>"9-test", "locale"=>"en"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE "projects"."user_id" = $1 AND ("projects"."state" NOT IN ('deleted')) LIMIT 10 OFFSET 0[0m  [["user_id", 9]]
+  [1m[35m (1.1ms)[0m  SELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mProjectTotal Load (0.4ms)[0m  SELECT  "project_totals".* FROM "project_totals"  WHERE "project_totals"."project_id" = $1 LIMIT 1  [["project_id", 7]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT projects.expires_at FROM "projects"  WHERE "projects"."id" = 7[0m
+  Rendered users/_project.html.slim (8.5ms)
+  Rendered users/projects/index.html.slim (15.4ms)
+Completed 200 OK in 42ms (Views: 36.7ms | ActiveRecord: 3.0ms)
+  [1m[36mOauthProvider Load (340.0ms)[0m  [1mSELECT "oauth_providers".* FROM "oauth_providers"[0m
+  [1m[35mOauthProvider Load (0.4ms)[0m  SELECT "oauth_providers".* FROM "oauth_providers"
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 11:03:28 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (55.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mUser Load (428.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (66.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (660.0ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 9  [["current_sign_in_at", "2014-09-09 11:03:31.790685"], ["last_sign_in_at", "2014-09-05 16:21:19.783343"], ["sign_in_count", 5], ["updated_at", "2014-09-09 11:03:31.858740"]]
+  [1m[36m (884.7ms)[0m  [1mCOMMIT[0m
+Redirected to /en
+Filter chain halted as :set_locale rendered or redirected
+Completed 302 Found in 4154ms (ActiveRecord: 2129.2ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-09-09 11:03:33 +0530
+Processing by ProjectsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProject Load (527.1ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE ("projects"."state" IN ('online')) AND (EXISTS(SELECT true FROM users u WHERE u.id = projects.user_id AND lower(u.address_state) = lower('')))  ORDER BY random() LIMIT 3[0m
+  [1m[35mProjectsForHome Load (1293.5ms)[0m  SELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recommended'
+  Rendered collection (0.0ms)
+  [1m[36mProjectsForHome Load (1.3ms)[0m  [1mSELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'expiring'[0m
+  Rendered collection (0.0ms)
+  [1m[35mProjectsForHome Load (1.2ms)[0m  SELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recents'
+  Rendered collection (0.0ms)
+  Rendered layouts/_newsletter.html.slim (333.5ms)
+  Rendered projects/index.html.slim within layouts/application (4085.8ms)
+  [1m[36mChannel Load (19.2ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  Rendered layouts/_analytics.html.slim (2.6ms)
+  Rendered layouts/_mixpanel.html.slim (2.0ms)
+  [1m[35mUserTotal Load (14.4ms)[0m  SELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (3.0ms)
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (509.0ms)
+  Rendered layouts/_newsletter.html.slim (2.3ms)
+  Rendered layouts/_facebook_like.html.slim (3.1ms)
+  Rendered layouts/_footer.html.slim (225.2ms)
+  Rendered layouts/_crazzy_egg.html.slim (1.7ms)
+  Rendered layouts/_new_zendesk.html.slim (3.8ms)
+Completed 200 OK in 9263ms (Views: 6964.3ms | ActiveRecord: 2255.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-09 11:03:43 +0530
+
+
+Started GET "/assets/catarse_bootstrap/catarse-assets.png" for 127.0.0.1 at 2014-09-09 11:03:46 +0530
+
+
+Started GET "/assets/catarse_bootstrap/banner-3years.png" for 127.0.0.1 at 2014-09-09 11:03:46 +0530
+
+
+Started GET "/assets/catarse_bootstrap/banner-content.png" for 127.0.0.1 at 2014-09-09 11:03:47 +0530
+
+
+Started GET "/assets/favicon.ico" for 127.0.0.1 at 2014-09-09 11:03:51 +0530
+
+
+Started GET "/en/users/9-test" for 127.0.0.1 at 2014-09-09 11:03:52 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9-test", "locale"=>"en"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (30.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE (deactivated_at IS NULL) AND "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mAuthorization Load (221.2ms)[0m  SELECT  "authorizations".* FROM "authorizations" INNER JOIN "oauth_providers" ON "oauth_providers"."id" = "authorizations"."oauth_provider_id" WHERE "authorizations"."user_id" = $1 AND (oauth_providers.name = 'facebook')  ORDER BY "authorizations"."id" ASC LIMIT 1  [["user_id", 9]]
+  [1m[36mUnsubscribe Load (63.8ms)[0m  [1mSELECT  "unsubscribes".* FROM "unsubscribes"  WHERE "unsubscribes"."user_id" = $1 AND "unsubscribes"."project_id" IS NULL LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mProject Load (0.2ms)[0m  SELECT DISTINCT "projects".* FROM "projects" INNER JOIN "contributions" ON "projects"."id" = "contributions"."project_id" WHERE "contributions"."state" = 'confirmed' AND "contributions"."user_id" = $1  [["user_id", 9]]
+  Rendered users/_unsubscribes.html.slim (3544.6ms)
+  [1m[36mOauthProvider Load (0.2ms)[0m  [1mSELECT  "oauth_providers".* FROM "oauth_providers"  WHERE "oauth_providers"."name" = 'facebook' LIMIT 1[0m
+  [1m[35mAuthorization Load (0.1ms)[0m  SELECT "authorizations".* FROM "authorizations"  WHERE "authorizations"."user_id" = $1 AND "authorizations"."oauth_provider_id" = 1  [["user_id", 9]]
+  [1m[36mState Load (200.8ms)[0m  [1mSELECT "states".* FROM "states"   ORDER BY "states"."name" ASC[0m
+  Rendered users/_current_user_fields.html.slim (861.1ms)
+  [1m[35mUserTotal Load (0.3ms)[0m  SELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1  [["user_id", 9]]
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND (contributions.can_refund)[0m  [["user_id", 9]]
+  Rendered users/_credits.html.slim (106.8ms)
+  Rendered users/show.html.slim within layouts/application (4766.1ms)
+  [1m[35mChannel Load (0.4ms)[0m  SELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1
+  Rendered layouts/_analytics.html.slim (0.1ms)
+  Rendered layouts/_mixpanel.html.slim (0.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (19.1ms)
+  [1m[35mProject Load (0.3ms)[0m  SELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (96.3ms)
+  Rendered layouts/_newsletter.html.slim (2.9ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (28.9ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.0ms)
+  Rendered layouts/_new_zendesk.html.slim (0.1ms)
+Completed 200 OK in 6181ms (Views: 4945.1ms | ActiveRecord: 884.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:01 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/gravatar.png" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/assets/catarse/social_icons.png" for 127.0.0.1 at 2014-09-09 11:04:02 +0530
+
+
+Started GET "/en/users/9-test/contributions?page=1" for 127.0.0.1 at 2014-09-09 11:04:03 +0530
+Processing by Users::ContributionsController#index as */*
+  Parameters: {"page"=>"1", "user_id"=>"9-test", "locale"=>"en"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mContribution Load (0.2ms)[0m  [1mSELECT  "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND ("contributions"."state" IN ('confirmed','requested_refund','refunded','waiting_confirmation'))  ORDER BY created_at DESC, confirmed_at DESC LIMIT 10 OFFSET 0[0m  [["user_id", 9]]
+  Rendered users/contributions/index.html.slim (3.9ms)
+Completed 200 OK in 195ms (Views: 106.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/login_with_facebook_button310x60.png" for 127.0.0.1 at 2014-09-09 11:04:03 +0530
+
+
+Started GET "/assets/catarse/bot_profileUser.png" for 127.0.0.1 at 2014-09-09 11:04:03 +0530
+
+
+Started GET "/en/profile/edit" for 127.0.0.1 at 2014-09-09 11:05:07 +0530
+
+ActionController::RoutingError (No route matches [GET] "/en/profile/edit"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (18.2ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4822.5ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (5005.0ms)
+
+
+Started GET "/en/users/9-test" for 127.0.0.1 at 2014-09-09 11:12:53 +0530
+
+PG::ConnectionBad - could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+:
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /home/hemant/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /home/hemant/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.4) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:51:in `restore_query_cache_settings'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:43:in `rescue in call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:32:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/86040880/variables" for 127.0.0.1 at 2014-09-09 11:12:55 +0530
+  [1m[36mOauthProvider Load (75.5ms)[0m  [1mSELECT "oauth_providers".* FROM "oauth_providers"[0m
+  [1m[35mOauthProvider Load (0.5ms)[0m  SELECT "oauth_providers".* FROM "oauth_providers"
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 11:14:43 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (17.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35mUser Load (59.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to /en
+Filter chain halted as :set_locale rendered or redirected
+Completed 302 Found in 126ms (ActiveRecord: 62.1ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-09-09 11:14:44 +0530
+Processing by ProjectsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProject Load (54.9ms)[0m  SELECT  "projects".* FROM "projects"  WHERE ("projects"."state" IN ('online')) AND (EXISTS(SELECT true FROM users u WHERE u.id = projects.user_id AND lower(u.address_state) = lower('')))  ORDER BY random() LIMIT 3
+  [1m[36mProjectsForHome Load (70.4ms)[0m  [1mSELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recommended'[0m
+  Rendered collection (0.0ms)
+  [1m[35mProjectsForHome Load (2.2ms)[0m  SELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'expiring'
+  Rendered collection (0.0ms)
+  [1m[36mProjectsForHome Load (2.1ms)[0m  [1mSELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recents'[0m
+  Rendered collection (0.0ms)
+  Rendered layouts/_newsletter.html.slim (41.9ms)
+  Rendered projects/index.html.slim within layouts/application (326.8ms)
+  [1m[35mChannel Load (15.4ms)[0m  SELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1
+  Rendered layouts/_analytics.html.slim (2.3ms)
+  Rendered layouts/_mixpanel.html.slim (3.5ms)
+  [1m[36mUserTotal Load (20.7ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (5.6ms)
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (193.8ms)
+  Rendered layouts/_newsletter.html.slim (2.0ms)
+  Rendered layouts/_facebook_like.html.slim (2.6ms)
+  Rendered layouts/_footer.html.slim (80.4ms)
+  Rendered layouts/_crazzy_egg.html.slim (1.9ms)
+  Rendered layouts/_new_zendesk.html.slim (7.3ms)
+Completed 200 OK in 1308ms (Views: 1072.4ms | ActiveRecord: 192.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:45 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:46 +0530
+
+
+Started GET "/en/users/9-test" for 127.0.0.1 at 2014-09-09 11:14:50 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9-test", "locale"=>"en"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE (deactivated_at IS NULL) AND "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAuthorization Load (23.8ms)[0m  [1mSELECT  "authorizations".* FROM "authorizations" INNER JOIN "oauth_providers" ON "oauth_providers"."id" = "authorizations"."oauth_provider_id" WHERE "authorizations"."user_id" = $1 AND (oauth_providers.name = 'facebook')  ORDER BY "authorizations"."id" ASC LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mUnsubscribe Load (0.7ms)[0m  SELECT  "unsubscribes".* FROM "unsubscribes"  WHERE "unsubscribes"."user_id" = $1 AND "unsubscribes"."project_id" IS NULL LIMIT 1  [["user_id", 9]]
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT DISTINCT "projects".* FROM "projects" INNER JOIN "contributions" ON "projects"."id" = "contributions"."project_id" WHERE "contributions"."state" = 'confirmed' AND "contributions"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered users/_unsubscribes.html.slim (87.4ms)
+  [1m[35mOauthProvider Load (0.4ms)[0m  SELECT  "oauth_providers".* FROM "oauth_providers"  WHERE "oauth_providers"."name" = 'facebook' LIMIT 1
+  [1m[36mAuthorization Load (0.2ms)[0m  [1mSELECT "authorizations".* FROM "authorizations"  WHERE "authorizations"."user_id" = $1 AND "authorizations"."oauth_provider_id" = 1[0m  [["user_id", 9]]
+  [1m[35mState Load (0.8ms)[0m  SELECT "states".* FROM "states"   ORDER BY "states"."name" ASC
+  Rendered users/_current_user_fields.html.slim (110.4ms)
+  [1m[36mUserTotal Load (0.5ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mContribution Load (0.4ms)[0m  SELECT "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND (contributions.can_refund)  [["user_id", 9]]
+  Rendered users/_credits.html.slim (16.9ms)
+  Rendered users/show.html.slim within layouts/application (284.9ms)
+  [1m[36mChannel Load (0.6ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  Rendered layouts/_analytics.html.slim (0.0ms)
+  Rendered layouts/_mixpanel.html.slim (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (0.3ms)
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (8.8ms)
+  Rendered layouts/_newsletter.html.slim (3.5ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (24.1ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.0ms)
+  Rendered layouts/_new_zendesk.html.slim (0.1ms)
+Completed 200 OK in 504ms (Views: 375.2ms | ActiveRecord: 36.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:51 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:52 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:52 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:52 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:52 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:52 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:52 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:52 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:14:52 +0530
+
+
+Started GET "/en/users/9-test/contributions?page=1" for 127.0.0.1 at 2014-09-09 11:14:52 +0530
+Processing by Users::ContributionsController#index as */*
+  Parameters: {"page"=>"1", "user_id"=>"9-test", "locale"=>"en"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mContribution Load (0.4ms)[0m  SELECT  "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND ("contributions"."state" IN ('confirmed','requested_refund','refunded','waiting_confirmation'))  ORDER BY created_at DESC, confirmed_at DESC LIMIT 10 OFFSET 0  [["user_id", 9]]
+  Rendered users/contributions/index.html.slim (4.3ms)
+Completed 200 OK in 37ms (Views: 23.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/en/profile/edit" for 127.0.0.1 at 2014-09-09 11:14:56 +0530
+
+ActionController::RoutingError (No route matches [GET] "/en/profile/edit"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.0ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.0ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (126.8ms)
+
+
+Started GET "/en/profile/edit" for 127.0.0.1 at 2014-09-09 11:16:10 +0530
+
+ActionController::RoutingError (No route matches [GET] "/en/profile/edit"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (7.9ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (103.0ms)
+
+
+Started GET "/en/profile/edit" for 127.0.0.1 at 2014-09-09 11:17:31 +0530
+
+ActionController::RoutingError (No route matches [GET] "/en/profile/edit"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.4ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (105.8ms)
+
+
+Started GET "/en/profile/edit" for 127.0.0.1 at 2014-09-09 11:17:34 +0530
+
+ActionController::RoutingError (No route matches [GET] "/en/profile/edit"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.2ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.2ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (102.8ms)
+
+
+Started GET "/en/profile/edit" for 127.0.0.1 at 2014-09-09 11:17:35 +0530
+
+ActionController::RoutingError (No route matches [GET] "/en/profile/edit"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (103.2ms)
+
+
+Started GET "/en/profile/edit" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+Processing by HighVoltage::PagesController#show as HTML
+  Parameters: {"id"=>"terms_of_use", "locale"=>"en"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProject Load (0.5ms)[0m  SELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1  [["user_id", 9]]
+  [1m[36mUserTotal Load (0.3ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  Rendered catarse_bootstrap/shared/_header_big.html.slim (44.0ms)
+  Rendered catarse_bootstrap/shared/_feedback.html.slim (31.8ms)
+  Rendered layouts/_newsletter.html.slim (3.6ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered catarse_bootstrap/shared/_footer_big.html.slim (30.2ms)
+  Rendered catarse_bootstrap/pages/terms_of_use.html.slim within layouts/catarse_bootstrap (129.5ms)
+  [1m[35mChannel Load (0.5ms)[0m  SELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  Rendered layouts/_facebook_sdk.html.slim (0.2ms)
+  Rendered catarse_bootstrap/layouts/_uservoice.html.slim (3.9ms)
+  Rendered catarse_bootstrap/layouts/_webfont.html.slim (1.6ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1
+  Rendered layouts/_analytics.html.slim (0.0ms)
+  Rendered layouts/_mixpanel.html.slim (0.1ms)
+Completed 200 OK in 257ms (Views: 229.7ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/webflow.css?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:45 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/catarse_bootstrap/catarse-logo.png" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/catarse_bootstrap/icons/icon-close.png" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/catarse_bootstrap/icons/feedback-box-icon.png" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/catarse_bootstrap/git-footer.png" for 127.0.0.1 at 2014-09-09 11:17:46 +0530
+
+
+Started GET "/assets/catarse_bootstrap/lupa.png" for 127.0.0.1 at 2014-09-09 11:17:50 +0530
+
+
+Started GET "/assets/catarse_bootstrap/catarse-assets.png" for 127.0.0.1 at 2014-09-09 11:17:51 +0530
+
+
+Started GET "/en/admin/partners" for 127.0.0.1 at 2014-09-09 11:18:08 +0530
+
+ActionController::RoutingError (No route matches [GET] "/en/admin/partners"):
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `tap'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `require'
+  bin/rails:4:in `<main>'
+
+
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.7ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.4ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.3ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.1ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /home/hemant/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (111.0ms)
+
+
+Started GET "/assets/catarse_bootstrap/catarse-assets.png" for 127.0.0.1 at 2014-09-09 11:19:05 +0530
+
+
+Started GET "/en/users/9-test" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9-test", "locale"=>"en"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE (deactivated_at IS NULL) AND "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAuthorization Load (0.3ms)[0m  [1mSELECT  "authorizations".* FROM "authorizations" INNER JOIN "oauth_providers" ON "oauth_providers"."id" = "authorizations"."oauth_provider_id" WHERE "authorizations"."user_id" = $1 AND (oauth_providers.name = 'facebook')  ORDER BY "authorizations"."id" ASC LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mUnsubscribe Load (0.3ms)[0m  SELECT  "unsubscribes".* FROM "unsubscribes"  WHERE "unsubscribes"."user_id" = $1 AND "unsubscribes"."project_id" IS NULL LIMIT 1  [["user_id", 9]]
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT DISTINCT "projects".* FROM "projects" INNER JOIN "contributions" ON "projects"."id" = "contributions"."project_id" WHERE "contributions"."state" = 'confirmed' AND "contributions"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered users/_unsubscribes.html.slim (5.0ms)
+  [1m[35mOauthProvider Load (0.4ms)[0m  SELECT  "oauth_providers".* FROM "oauth_providers"  WHERE "oauth_providers"."name" = 'facebook' LIMIT 1
+  [1m[36mAuthorization Load (0.4ms)[0m  [1mSELECT "authorizations".* FROM "authorizations"  WHERE "authorizations"."user_id" = $1 AND "authorizations"."oauth_provider_id" = 1[0m  [["user_id", 9]]
+  [1m[35mState Load (0.5ms)[0m  SELECT "states".* FROM "states"   ORDER BY "states"."name" ASC
+  Rendered users/_current_user_fields.html.slim (44.6ms)
+  [1m[36mUserTotal Load (0.2ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mContribution Load (0.3ms)[0m  SELECT "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND (contributions.can_refund)  [["user_id", 9]]
+  Rendered users/_credits.html.slim (10.0ms)
+  Rendered users/show.html.slim within layouts/application (67.9ms)
+  [1m[36mChannel Load (0.5ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  Rendered layouts/_analytics.html.slim (0.0ms)
+  Rendered layouts/_mixpanel.html.slim (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (0.2ms)
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (21.5ms)
+  Rendered layouts/_newsletter.html.slim (3.4ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (21.5ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.0ms)
+  Rendered layouts/_new_zendesk.html.slim (0.1ms)
+Completed 200 OK in 213ms (Views: 133.1ms | ActiveRecord: 18.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:07 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/gravatar.png" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/catarse_bootstrap/catarse-assets.png" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/assets/catarse/social_icons.png" for 127.0.0.1 at 2014-09-09 11:19:08 +0530
+
+
+Started GET "/en/users/9-test/contributions?page=1" for 127.0.0.1 at 2014-09-09 11:19:09 +0530
+Processing by Users::ContributionsController#index as */*
+  Parameters: {"page"=>"1", "user_id"=>"9-test", "locale"=>"en"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mContribution Load (0.4ms)[0m  SELECT  "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND ("contributions"."state" IN ('confirmed','requested_refund','refunded','waiting_confirmation'))  ORDER BY created_at DESC, confirmed_at DESC LIMIT 10 OFFSET 0  [["user_id", 9]]
+  Rendered users/contributions/index.html.slim (1.0ms)
+Completed 200 OK in 11ms (Views: 5.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/en/profile/edit" for 127.0.0.1 at 2014-09-09 11:19:13 +0530
+Processing by Channels::ProfilesController#edit as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mChannel Load (0.6ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+Completed 500 Internal Server Error in 4ms
+
+Pundit::NotDefinedError - unable to find policy NilClassPolicy for :
+  pundit (0.2.3) lib/pundit/policy_finder.rb:28:in `policy!'
+  pundit (0.2.3) lib/pundit.rb:32:in `policy!'
+  pundit (0.2.3) lib/pundit.rb:84:in `policy'
+  pundit (0.2.3) lib/pundit.rb:66:in `authorize'
+  app/controllers/channels/profiles_controller.rb:9:in `edit'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:215:in `block in halting_and_conditional'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  http_accept_language (2.0.1) lib/http_accept_language/middleware.rb:13:in `call'
+  request_store (1.0.5) lib/request_store/middleware.rb:9:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/116862960/variables" for 127.0.0.1 at 2014-09-09 11:19:13 +0530
+
+
+Started GET "/en/users/9-test" for 127.0.0.1 at 2014-09-09 11:20:29 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9-test", "locale"=>"en"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE (deactivated_at IS NULL) AND "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAuthorization Load (0.3ms)[0m  [1mSELECT  "authorizations".* FROM "authorizations" INNER JOIN "oauth_providers" ON "oauth_providers"."id" = "authorizations"."oauth_provider_id" WHERE "authorizations"."user_id" = $1 AND (oauth_providers.name = 'facebook')  ORDER BY "authorizations"."id" ASC LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mUnsubscribe Load (0.3ms)[0m  SELECT  "unsubscribes".* FROM "unsubscribes"  WHERE "unsubscribes"."user_id" = $1 AND "unsubscribes"."project_id" IS NULL LIMIT 1  [["user_id", 9]]
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT DISTINCT "projects".* FROM "projects" INNER JOIN "contributions" ON "projects"."id" = "contributions"."project_id" WHERE "contributions"."state" = 'confirmed' AND "contributions"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered users/_unsubscribes.html.slim (4.0ms)
+  [1m[35mOauthProvider Load (0.5ms)[0m  SELECT  "oauth_providers".* FROM "oauth_providers"  WHERE "oauth_providers"."name" = 'facebook' LIMIT 1
+  [1m[36mAuthorization Load (0.4ms)[0m  [1mSELECT "authorizations".* FROM "authorizations"  WHERE "authorizations"."user_id" = $1 AND "authorizations"."oauth_provider_id" = 1[0m  [["user_id", 9]]
+  [1m[35mState Load (0.5ms)[0m  SELECT "states".* FROM "states"   ORDER BY "states"."name" ASC
+  Rendered users/_current_user_fields.html.slim (104.9ms)
+  [1m[36mUserTotal Load (0.3ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mContribution Load (0.3ms)[0m  SELECT "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND (contributions.can_refund)  [["user_id", 9]]
+  Rendered users/_credits.html.slim (11.2ms)
+  Rendered users/show.html.slim within layouts/application (128.7ms)
+  [1m[36mChannel Load (0.6ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  Rendered layouts/_analytics.html.slim (0.1ms)
+  Rendered layouts/_mixpanel.html.slim (0.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (0.3ms)
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (24.0ms)
+  Rendered layouts/_newsletter.html.slim (3.2ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (22.5ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.0ms)
+  Rendered layouts/_new_zendesk.html.slim (0.1ms)
+Completed 200 OK in 257ms (Views: 198.2ms | ActiveRecord: 18.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:30 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:31 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:31 +0530
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-09 11:20:31 +0530
+
+
+Started GET "/assets/gravatar.png" for 127.0.0.1 at 2014-09-09 11:20:31 +0530
+
+
+Started GET "/assets/catarse_bootstrap/catarse-assets.png" for 127.0.0.1 at 2014-09-09 11:20:31 +0530
+
+
+Started GET "/assets/catarse/social_icons.png" for 127.0.0.1 at 2014-09-09 11:20:31 +0530
+
+
+Started GET "/en/users/9-test/contributions?page=1" for 127.0.0.1 at 2014-09-09 11:20:31 +0530
+Processing by Users::ContributionsController#index as */*
+  Parameters: {"page"=>"1", "user_id"=>"9-test", "locale"=>"en"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  [1m[35mContribution Load (0.4ms)[0m  SELECT  "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND ("contributions"."state" IN ('confirmed','requested_refund','refunded','waiting_confirmation'))  ORDER BY created_at DESC, confirmed_at DESC LIMIT 10 OFFSET 0  [["user_id", 9]]
+  Rendered users/contributions/index.html.slim (1.3ms)
+Completed 200 OK in 13ms (Views: 6.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/en/users/9-test" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"9-test", "locale"=>"en"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE (deactivated_at IS NULL) AND "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAuthorization Load (0.4ms)[0m  [1mSELECT  "authorizations".* FROM "authorizations" INNER JOIN "oauth_providers" ON "oauth_providers"."id" = "authorizations"."oauth_provider_id" WHERE "authorizations"."user_id" = $1 AND (oauth_providers.name = 'facebook')  ORDER BY "authorizations"."id" ASC LIMIT 1[0m  [["user_id", 9]]
+  [1m[35mUnsubscribe Load (0.3ms)[0m  SELECT  "unsubscribes".* FROM "unsubscribes"  WHERE "unsubscribes"."user_id" = $1 AND "unsubscribes"."project_id" IS NULL LIMIT 1  [["user_id", 9]]
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT DISTINCT "projects".* FROM "projects" INNER JOIN "contributions" ON "projects"."id" = "contributions"."project_id" WHERE "contributions"."state" = 'confirmed' AND "contributions"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered users/_unsubscribes.html.slim (4.4ms)
+  [1m[35mOauthProvider Load (0.7ms)[0m  SELECT  "oauth_providers".* FROM "oauth_providers"  WHERE "oauth_providers"."name" = 'facebook' LIMIT 1
+  [1m[36mAuthorization Load (0.3ms)[0m  [1mSELECT "authorizations".* FROM "authorizations"  WHERE "authorizations"."user_id" = $1 AND "authorizations"."oauth_provider_id" = 1[0m  [["user_id", 9]]
+  Rendered users/_current_user_fields.html.slim (43.0ms)
+  [1m[35mUserTotal Load (0.4ms)[0m  SELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1  [["user_id", 9]]
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND (contributions.can_refund)[0m  [["user_id", 9]]
+  Rendered users/_credits.html.slim (6.6ms)
+  Rendered users/show.html.slim within layouts/application (61.3ms)
+  [1m[35mChannel Load (0.6ms)[0m  SELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1
+  Rendered layouts/_analytics.html.slim (0.0ms)
+  Rendered layouts/_mixpanel.html.slim (0.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (0.2ms)
+  [1m[35mProject Load (0.5ms)[0m  SELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (7.5ms)
+  Rendered layouts/_newsletter.html.slim (1.9ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (20.7ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.0ms)
+  Rendered layouts/_new_zendesk.html.slim (0.1ms)
+Completed 200 OK in 121ms (Views: 110.3ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:46 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/gravatar.png" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/catarse_bootstrap/catarse-assets.png" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/assets/catarse/social_icons.png" for 127.0.0.1 at 2014-09-09 11:20:47 +0530
+
+
+Started GET "/en/users/9-test/contributions?page=1" for 127.0.0.1 at 2014-09-09 11:20:48 +0530
+Processing by Users::ContributionsController#index as */*
+  Parameters: {"page"=>"1", "user_id"=>"9-test", "locale"=>"en"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = $1 LIMIT 1  [["id", 9]]
+  [1m[36mContribution Load (0.3ms)[0m  [1mSELECT  "contributions".* FROM "contributions"  WHERE "contributions"."user_id" = $1 AND ("contributions"."state" IN ('confirmed','requested_refund','refunded','waiting_confirmation'))  ORDER BY created_at DESC, confirmed_at DESC LIMIT 10 OFFSET 0[0m  [["user_id", 9]]
+  Rendered users/contributions/index.html.slim (0.9ms)
+Completed 200 OK in 13ms (Views: 9.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 11:20:54 +0530
+Processing by ProjectsController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to /en
+Filter chain halted as :set_locale rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-09-09 11:20:54 +0530
+Processing by ProjectsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mProject Load (1.0ms)[0m  SELECT  "projects".* FROM "projects"  WHERE ("projects"."state" IN ('online')) AND (EXISTS(SELECT true FROM users u WHERE u.id = projects.user_id AND lower(u.address_state) = lower('')))  ORDER BY random() LIMIT 3
+  [1m[36mProjectsForHome Load (2.1ms)[0m  [1mSELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recommended'[0m
+  Rendered collection (0.0ms)
+  [1m[35mProjectsForHome Load (2.0ms)[0m  SELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'expiring'
+  Rendered collection (0.0ms)
+  [1m[36mProjectsForHome Load (1.3ms)[0m  [1mSELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recents'[0m
+  Rendered collection (0.0ms)
+  Rendered layouts/_newsletter.html.slim (2.3ms)
+  Rendered projects/index.html.slim within layouts/application (21.6ms)
+  [1m[35mChannel Load (0.6ms)[0m  SELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1
+  Rendered layouts/_analytics.html.slim (0.0ms)
+  Rendered layouts/_mixpanel.html.slim (0.0ms)
+  [1m[36mUserTotal Load (0.4ms)[0m  [1mSELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1[0m  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (0.2ms)
+  [1m[35mProject Load (0.4ms)[0m  SELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (10.1ms)
+  Rendered layouts/_newsletter.html.slim (1.8ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (20.2ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.0ms)
+  Rendered layouts/_new_zendesk.html.slim (0.1ms)
+Completed 200 OK in 85ms (Views: 70.1ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:20:54 +0530
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:54 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/assets/catarse_bootstrap/catarse-assets.png" for 127.0.0.1 at 2014-09-09 11:20:55 +0530
+
+
+Started GET "/en/profile/edit" for 127.0.0.1 at 2014-09-09 11:21:05 +0530
+Processing by Channels::ProfilesController#edit as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[36mChannel Load (0.6ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1[0m  [["user_id", 9]]
+  [1m[35mUserTotal Load (0.3ms)[0m  SELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1  [["user_id", 9]]
+  Rendered catarse_bootstrap/shared/_header_channel.html.slim (16.5ms)
+  Rendered catarse_bootstrap/channels/profiles/edit.html.slim within layouts/catarse_bootstrap (51.8ms)
+Completed 500 Internal Server Error in 78ms
+
+NoMethodError - undefined method `name' for nil:NilClass:
+  app/views/catarse_bootstrap/channels/profiles/edit.html.slim:3:in `_app_views_catarse_bootstrap_channels_profiles_edit_html_slim___3446536531526755327_123229900'
+  actionview (4.1.4) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.4) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.4) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.4) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.4) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.4) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.4) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.4) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.4) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.4) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.4) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.4) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.4) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.4) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.4) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.4) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /home/hemant/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.4) lib/action_controller/metal/responder.rb:238:in `default_render'
+  actionpack (4.1.4) lib/action_controller/metal/responder.rb:165:in `to_html'
+  responders (1.0.0) lib/responders/flash_responder.rb:104:in `to_html'
+  actionpack (4.1.4) lib/action_controller/metal/responder.rb:158:in `respond'
+  actionpack (4.1.4) lib/action_controller/metal/responder.rb:151:in `call'
+  actionpack (4.1.4) lib/action_controller/metal/mime_responds.rb:400:in `respond_with'
+  inherited_resources (1.4.1) lib/inherited_resources/actions.rb:25:in `edit'
+  app/controllers/channels/profiles_controller.rb:10:in `edit'
+  actionpack (4.1.4) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:215:in `block in halting_and_conditional'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:186:in `call!'
+  omniauth (1.2.1) lib/omniauth/strategy.rb:164:in `call'
+  http_accept_language (2.0.1) lib/http_accept_language/middleware.rb:13:in `call'
+  request_store (1.0.5) lib/request_store/middleware.rb:9:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (1.1.0) lib/better_errors/middleware.rb:56:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.5.2) lib/rack/handler/thin.rb:16:in `run'
+  rack (1.5.2) lib/rack/server.rb:264:in `start'
+  railties (4.1.4) lib/rails/commands/server.rb:69:in `start'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:81:in `block in server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:76:in `server'
+  railties (4.1.4) lib/rails/commands/commands_tasks.rb:40:in `run_command!'
+  railties (4.1.4) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:4:in `<main>'
+
+
+
+Started POST "/__better_errors/124600440/variables" for 127.0.0.1 at 2014-09-09 11:21:06 +0530
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+Processing by ProjectsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to /en
+Filter chain halted as :set_locale rendered or redirected
+Completed 302 Found in 23ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/en" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+Processing by ProjectsController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 9  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mProject Load (0.8ms)[0m  [1mSELECT  "projects".* FROM "projects"  WHERE ("projects"."state" IN ('online')) AND (EXISTS(SELECT true FROM users u WHERE u.id = projects.user_id AND lower(u.address_state) = lower('')))  ORDER BY random() LIMIT 3[0m
+  [1m[35mProjectsForHome Load (1.4ms)[0m  SELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recommended'
+  Rendered collection (0.0ms)
+  [1m[36mProjectsForHome Load (2.4ms)[0m  [1mSELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'expiring'[0m
+  Rendered collection (0.0ms)
+  [1m[35mProjectsForHome Load (2.1ms)[0m  SELECT "projects_for_home".* FROM "projects_for_home"  WHERE "projects_for_home"."origin" = 'recents'
+  Rendered collection (0.0ms)
+  Rendered layouts/_newsletter.html.slim (2.4ms)
+  Rendered projects/index.html.slim within layouts/application (31.6ms)
+  [1m[36mChannel Load (0.4ms)[0m  [1mSELECT  "channels".* FROM "channels"  WHERE "channels"."permalink" = '' LIMIT 1[0m
+  Rendered layouts/_analytics.html.slim (0.0ms)
+  Rendered layouts/_mixpanel.html.slim (0.0ms)
+  [1m[35mUserTotal Load (0.4ms)[0m  SELECT  "user_totals".* FROM "user_totals"  WHERE "user_totals"."user_id" = $1 LIMIT 1  [["user_id", 9]]
+  Rendered layouts/_facebook_sdk.html.slim (0.3ms)
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT "projects".* FROM "projects"  WHERE "projects"."user_id" = $1[0m  [["user_id", 9]]
+  Rendered layouts/_header.html.slim (89.0ms)
+  Rendered layouts/_newsletter.html.slim (2.2ms)
+  Rendered layouts/_facebook_like.html.slim (0.1ms)
+  Rendered layouts/_footer.html.slim (24.1ms)
+  Rendered layouts/_crazzy_egg.html.slim (0.0ms)
+  Rendered layouts/_new_zendesk.html.slim (0.1ms)
+Completed 200 OK in 193ms (Views: 174.0ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+
+
+Started GET "/assets/lib/jquery.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+
+
+Started GET "/assets/lib/jquery-ui.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+
+
+Started GET "/assets/jquery.autosize.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+
+
+Started GET "/assets/best_in_place.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+
+
+Started GET "/assets/lib/underscore.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+
+
+Started GET "/assets/lib/backbone.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+
+
+Started GET "/assets/lib/skull.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:45 +0530
+
+
+Started GET "/assets/app/app.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/jquery.sticky.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/bootstrap.min.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/form.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/froogaloop.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/infinite_scroll.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/jquery.maskedinput.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/modal.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/show_password_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/store.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/tabs.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/timed_input.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/lib/twitter.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/channel_post_coments.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/channel_profile.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/contribution.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/contribution/contribution_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/devise/feedback_support.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/explore.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/feedback_box.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/how_it_works.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/mix_panel.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/payment.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/project.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/project/posts.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/project/project_comments.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/project/project_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/project/project_sidebar.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/project_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/registration.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/reset_password.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/review_form.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/sort.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/user.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/user/user_contributions.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/app/user/user_projects.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
+
+
+Started GET "/assets/catarse_bootstrap/catarse-assets.png" for 127.0.0.1 at 2014-09-09 11:22:46 +0530
