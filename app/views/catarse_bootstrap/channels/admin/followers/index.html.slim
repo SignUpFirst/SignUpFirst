@@ -10,6 +10,7 @@
     .large-2.columns
       = link_to t('.download'), channels_admin_reports_subscriber_reports_path(format: :csv), class: 'button medium action'
 .row
+- if @subscribers
   = paginate @subscribers
   - if @subscribers.empty?
     = t('.no_subscribers')

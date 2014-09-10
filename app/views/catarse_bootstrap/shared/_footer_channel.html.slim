@@ -3,6 +3,7 @@
     .large-12.columns
       nav
         ul.nav-horizontal
+        -if channel
           li.nav-item.separator
             = link_to t('.terms'), channel.terms_url, title: t('.terms'), class: 'standard-link', target: '_blank'
           li.nav-item.separator

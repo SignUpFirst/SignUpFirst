@@ -1,10 +1,10 @@
 header.header
   .centered
-    h1
+    h1 
       = link_to "#{CatarseSettings[:company_name]}", root_path(host: CatarseSettings[:base_domain] || request.domain, protocol: 'http'), :class => 'logo', :title => CatarseSettings[:company_name]
     nav.header-nav
       ul
-        li.header-nav-li
+        li.header-nav-li        
           = link_to t('.submit'), page_path(:how_it_works), :class => 'project'
 
         li.header-nav-li
@@ -35,9 +35,9 @@ header.header
                 .small
                   | (#{current_user.display_credits})
               li
-                = link_to t('layouts.user.refund_link'), user_path(current_user, anchor: 'credits')
+                = link_to t('layouts.user.refund_link'), user_path(current_user, anchor: 'credits')                
               - if current_user.admin? || current_user.channel
-                li.divider
+                li.divider                                         
                 - for menu, path in controller.menu do
                   li= link_to menu, path
               li.divider= link_to t('layouts.user.logout'), destroy_user_session_path, method: :delete

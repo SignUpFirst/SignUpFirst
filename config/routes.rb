@@ -161,9 +161,10 @@ Catarse::Application.routes.draw do
 
   get "/:permalink" => "projects#show", as: :project_by_slug
 
-  get "/profile/edit" => 'channels/profiles#edit'
-
-
+  #get "/profile/edit" => 'channels/profiles#edit'
+  get "/admin/followers" => 'channels/admin/followers#index'
+  get "/admin/posts" => 'channels/admin/posts#index'
+  get "/admin/partners" => 'channels/admin/partners#index'
 end
 
 

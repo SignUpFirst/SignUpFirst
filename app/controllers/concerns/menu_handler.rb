@@ -29,6 +29,11 @@ module Concerns
 
       def menu
         channel_admin_paths = [:channels_admin_followers_path, :channels_admin_posts_path, :channels_admin_partners_path ,:edit_channels_profile_path]
+        p "%%%%%%%%%%%%%%%%%%%%%%%%"
+        p current_user
+        p current_user.admin?
+        p current_user.channel
+        p "%%%%%%%%%%%%%%%%%%%%%%%%"
         ApplicationController.menu_items.inject({}) do |memo, el|
           if current_user.admin? || channel_admin_paths.include?(el.last)
             memo.merge!(el.first => Rails.application.routes.url_helpers.send(el.last))

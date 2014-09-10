@@ -325,6 +325,7 @@ en:
     user:
       logout: Logout
       my_credits: "My credit"
+      
   not_informed: "not informed"
   notify_locale: "We identified your language by your browser. If you prefer another one, click on one of the flags on the right."
   on_the_spot:

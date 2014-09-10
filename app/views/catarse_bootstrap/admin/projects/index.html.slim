@@ -104,6 +104,7 @@
               .btn-group
                 = link_to 'javascript:void(0);', data: {toggle: 'dropdown'}, class: 'btn btn-mini dropdown-toggle' do
                   span.caret
+                -  p "#{project}"
               ul.dropdown
                 - if project.can_approve?
                   li
