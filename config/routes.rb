@@ -165,6 +165,7 @@ Catarse::Application.routes.draw do
   get "/admin/followers" => 'channels/admin/followers#index'
   get "/admin/posts" => 'channels/admin/posts#index'
   get "/admin/partners" => 'channels/admin/partners#index'
+  get "/profile/edit" => 'channels/profiles#show' 
 end
 
 

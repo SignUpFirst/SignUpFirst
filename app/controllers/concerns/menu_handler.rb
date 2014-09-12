@@ -26,13 +26,13 @@ module Concerns
       add_to_menu 'channels.admin.posts_menu',      :channels_admin_posts_path
       add_to_menu 'channels.admin.partners_menu',   :channels_admin_partners_path
       add_to_menu 'channels.admin.profile_menu',    :edit_channels_profile_path
-
       def menu
         channel_admin_paths = [:channels_admin_followers_path, :channels_admin_posts_path, :channels_admin_partners_path ,:edit_channels_profile_path]
         p "%%%%%%%%%%%%%%%%%%%%%%%%"
         p current_user
         p current_user.admin?
         p current_user.channel
+       # p current_user.channel.profile
         p "%%%%%%%%%%%%%%%%%%%%%%%%"
         ApplicationController.menu_items.inject({}) do |memo, el|
           if current_user.admin? || channel_admin_paths.include?(el.last)
