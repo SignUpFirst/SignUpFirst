@@ -1,11 +1,10 @@
 GIT
   remote: git://github.com/bernat/best_in_place.git
-  revision: 366413be357d65cdf47031e928aea969f72e3659
-  branch: rails-4
+  revision: dd5fa8f80ebf81926cd1cff50dd4927ca09bea3c
   specs:
-    best_in_place (2.0.3)
-      jquery-rails
-      rails (~> 4)
+    best_in_place (3.0.0.alpha)
+      actionpack (>= 3.2)
+      railties (>= 3.2)
 
 GIT
   remote: git://github.com/catarse/moip-ruby.git
@@ -19,9 +18,9 @@ GIT
 
 GIT
   remote: https://github.com/catarse/catarse_credits.git
-  revision: f409876e017694fe578844d494b06822fb890092
+  revision: ef989fa92a953db4dc0d9cca4c658abc8b50fb6a
   specs:
-    catarse_credits (0.0.5)
+    catarse_credits (0.0.6)
       rails (>= 4.0)
 
 GEM
@@ -41,17 +40,17 @@ GEM
       activesupport (= 4.1.4)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-    active_utils (2.2.1)
+    active_utils (2.2.3)
       activesupport (>= 2.3.11)
       i18n
-    activemerchant (1.43.1)
-      active_utils (~> 2.0, >= 2.0.1)
-      activesupport (>= 2.3.14, < 5.0.0)
+    activemerchant (1.44.1)
+      active_utils (~> 2.2.0)
+      activesupport (>= 3.2.14, < 5.0.0)
       builder (>= 2.1.2, < 4.0.0)
-      i18n (~> 0.5)
+      i18n (>= 0.6.9)
       json (~> 1.7)
-      money (< 7.0.0)
       nokogiri (~> 1.4)
+      offsite_payments (~> 2.0.0)
     activemodel (4.1.4)
       activesupport (= 4.1.4)
       builder (~> 3.1)
@@ -157,7 +156,7 @@ GEM
       activemodel (>= 3.0)
       activesupport (>= 3.0)
       request_store (~> 1.0.3)
-    enumerate_it (1.2.1)
+    enumerate_it (1.2.3)
       activesupport (>= 3.0.0)
     erubis (2.7.0)
     eventmachine (1.0.3)
@@ -230,6 +229,8 @@ GEM
     jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (5.0.0)
+      railties (>= 3.2.16)
     json (1.8.1)
     jwt (0.1.13)
       multi_json (>= 1.5)
@@ -241,6 +242,7 @@ GEM
       addressable (~> 2.3)
     letter_opener (1.2.0)
       launchy (~> 2.2)
+    libv8 (3.16.14.3)
     libxml-ruby (2.6.0)
     loofah (2.0.0)
       nokogiri (>= 1.5.9)
@@ -275,6 +277,14 @@ GEM
       jwt (~> 0.1.4)
       multi_json (~> 1.0)
       rack (~> 1.2)
+    offsite_payments (2.0.1)
+      active_utils (~> 2.2.0)
+      activesupport (>= 3.2.14, < 5.0.0)
+      builder (>= 2.1.2, < 4.0.0)
+      i18n (~> 0.5)
+      json (~> 1.7)
+      money (< 7.0.0)
+      nokogiri (~> 1.4)
     omniauth (1.2.1)
       hashie (>= 1.2, < 3)
       rack (~> 1.0)
@@ -350,6 +360,7 @@ GEM
     redis (3.1.0)
     redis-namespace (1.5.0)
       redis (~> 3.0, >= 3.0.4)
+    ref (1.0.5)
     request_store (1.0.5)
     responders (1.0.0)
       railties (>= 3.2, < 5)
@@ -440,6 +451,9 @@ GEM
     temple (0.6.7)
     term-ansicolor (1.3.0)
       tins (~> 1.0)
+    therubyracer (0.12.1)
+      libv8 (~> 3.16.14.0)
+      ref
     thin (1.6.2)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
@@ -504,6 +518,7 @@ DEPENDENCIES
   database_cleaner
   devise
   draper
+  execjs
   ezcrypto
   factory_girl_rails
   fakeweb
@@ -520,6 +535,7 @@ DEPENDENCIES
   inherited_resources (~> 1.4.1)
   jasmine-rails
   jquery-rails
+  jquery-ui-rails
   kaminari
   launchy
   letter_opener
@@ -555,6 +571,7 @@ DEPENDENCIES
   spectator-validates_email
   sprockets (~> 2.10.1)
   state_machine
+  therubyracer
   thin
   to_xls
   uglifier

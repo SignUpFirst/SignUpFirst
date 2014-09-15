@@ -10,6 +10,19 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
+
+
+
+
+
+
+//= require jquery.purr
+//= require best_in_place.purr
+
+//= require jquery-ui
+//= require best_in_place.jquery-ui
+
+
 //= require ./lib/jquery.js
 //= require jquery_ujs
 //= require ./lib/jquery-ui.js
@@ -21,5 +34,10 @@
 //= require ./lib/jquery.sticky.js
 //= require_tree ./lib
 //= require_tree ./app
+
+//= require jquery
+//= require best_in_place
+
+
 
 

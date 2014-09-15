@@ -161,6 +161,8 @@ Catarse::Application.routes.draw do
 
   get "/:permalink" => "projects#show", as: :project_by_slug
 
+  get "/admin/partners" => 'channels/admin/partners#show', id: 'terms_of_use'
+
 
 end
 

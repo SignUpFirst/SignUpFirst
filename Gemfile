@@ -11,7 +11,8 @@ gem 'sidekiq',  '~> 3.1.3'
 gem 'sinatra', require: false # required by sidekiq web interface mounted on /sidekiq
 
 # Turns every field on a editable one
-gem 'best_in_place', github: 'bernat/best_in_place', branch: 'rails-4'
+gem 'best_in_place', github: 'bernat/best_in_place'
+#, branch: 'rails-4'
 
 # State machine for attributes on models
 gem 'state_machine', require: 'state_machine/core'
@@ -151,3 +152,6 @@ gem 'sprockets', '~> 2.10.1'
 # FIXME: Not-anymore-on-development
 # Gems that are with 1 or more years on the vacuum
 gem 'weekdays'
+gem 'therubyracer'
+gem 'execjs'
+gem 'jquery-ui-rails'

@@ -53,6 +53,7 @@ module Catarse
 
     # TODO: remove
     config.active_record.whitelist_attributes = false
+    config.i18n.default_locale = :en
 
   end
 end
