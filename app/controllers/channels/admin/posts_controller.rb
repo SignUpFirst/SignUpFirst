@@ -1,6 +1,8 @@
 class Channels::Admin::PostsController < Channels::Admin::BaseController
   defaults resource_class: ChannelPost
 
+  
+
   def edit
     return redirect_to channels_admin_posts_path if resource.visible
   end

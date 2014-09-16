@@ -18,12 +18,11 @@ class ProjectsController < ApplicationController
             .page(params[:page]).per(6)
           return render partial: 'project', collection: @projects, layout: false
         else
-          @title = t("site.title")
-
+          @title = t("site.title")         
           @recommends = ProjectsForHome.recommends.includes(:project_total)
           @projects_near = Project.with_state('online').near_of(current_user.address_state).order("random()").limit(3).includes(:project_total) if current_user
           @expiring = ProjectsForHome.expiring.includes(:project_total)
-          @recent   = ProjectsForHome.recents.includes(:project_total)
+          @recent   = ProjectsForHome.recents.includes(:project_total)        
         end
       end
     end

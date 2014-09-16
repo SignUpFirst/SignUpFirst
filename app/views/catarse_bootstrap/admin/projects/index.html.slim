@@ -82,11 +82,11 @@
           tr id=project.id class=cycle("even", "odd")
             td.large-2.columns= link_to project.name, project_by_slug_path(permalink: project.permalink)
             td.large-1.columns= project.category
-            td.large-1.columns= best_in_place [:admin, project], :user_id, method: :put, type: :input
-            td.large-1.columns= best_in_place [:admin, project], :goal, method: :put, type: :input, display_as: :display_goal
+            td.large-1.columns= best_in_place [:admin, project], :user_id, type: :input
+            td.large-1.columns= best_in_place [:admin, project], :goal, type: :input, display_as: :display_goal
             td.large-1.columns= "#{project.display_pledged} (#{project.progress}%)"
             td.large-1.columns= project.total_contributions
-            td.large-1.columns= best_in_place [:admin, project], :recommended, method: :put, type: :checkbox, collection: [t('no'), t('yes')]
+            td.large-1.columns= best_in_place [:admin, project], :recommended, type: :checkbox, collection: [t('no'), t('yes')]
             td.large-1.columns= project.online_date.strftime('%d/%m/%Y') if project.online_date
             td.large-1.columns= project.display_expires_at
             td.large-1.columns= project.updated_at.strftime('%d/%m/%Y')
@@ -104,6 +104,7 @@
               .btn-group
                 = link_to 'javascript:void(0);', data: {toggle: 'dropdown'}, class: 'btn btn-mini dropdown-toggle' do
                   span.caret
+                -  p "#{project}"
               ul.dropdown
                 - if project.can_approve?
                   li
@@ -123,7 +124,7 @@
                       = t('channels.admin.table.send_to_draft')
                 - if project.can_push_to_trash?
                   li
-                    = link_to  push_to_trash_admin_project_path(project), data:{ confirm: t('channels.admin.table.confirmation')}, method: :put  do
+                    = link_to  push_to_trash_admin_project_path(project), data:{ confirm: t('channels.admin.table.confirmation')}, method: :delete  do
                       = t('channels.admin.table.send_to_trash')
 
   = paginate @projects

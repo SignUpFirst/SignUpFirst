@@ -100,7 +100,7 @@ class ProjectObserver < ActiveRecord::Observer
 
   def deliver_default_notification_for(project, notification_type)
     template_name = project.notification_type(notification_type)
-
+    CatarseSettings[:company_name] = 'Catarse'
     project.notify_owner(
       template_name, 
       {

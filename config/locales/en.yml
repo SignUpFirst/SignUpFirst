@@ -325,6 +325,7 @@ en:
     user:
       logout: Logout
       my_credits: "My credit"
+      
   not_informed: "not informed"
   notify_locale: "We identified your language by your browser. If you prefer another one, click on one of the flags on the right."
   on_the_spot:
@@ -602,7 +603,13 @@ en:
     start_project_email:
       subject: "Project sent by %{name}"
       subject_html: "Project sent by %{link}"
-
+  admin:
+    projects:
+      index:
+        menu: "Admin Projects"
+    financials:
+      index:
+        menu: "Admin Financials"
   channels:
     subscribed: "+ %{count} followers"
     header:
@@ -622,6 +629,9 @@ en:
       contact: "Contact"
       what_is_channel: "What is a channel?"
     admin:
+      followers_menu: "Followers"
+      partners_menu: "Channel Partners"
+      posts_menu: "Channel Posts"
       statistics:
         title: "Followers"
         download: "Download list"
@@ -650,7 +660,9 @@ en:
         state: "State"
         approve: "Approve"
         reject: "Reject"
-        send_to_draft: "Sendo to draft"
+        confirmation: "Comfirm"
+        send_to_draft: "Send to draft"
+        send_to_trash: "Send to trash"
     edit: "Update channel"
 
   registrations:
